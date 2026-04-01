@@ -3,7 +3,7 @@
 # we are creating 50Gb root disk, but only 20gb is partioned 
 # reamaing 30GB we need to exted using below commands
 growpart /dev/nvme0n1 4
-lvextend -r -L +30G /dev/RootVG/varVol
+lvextend -L +30G /dev/RootVG/varVol
 xfs_growfs /var
 
 
