@@ -4,7 +4,7 @@
 # reamaing 30GB we need to exted using below commands
 growpart /dev/nvme0n1 4
 lvextend -r -L +30G /dev/RootVG/varVol
-sudo xfs_growfs /var
+xfs_growfs /var
 
 
 dnf -y install dnf-plugins-core
