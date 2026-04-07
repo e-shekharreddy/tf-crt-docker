@@ -9,8 +9,8 @@ resource "aws_instance" "workstation" {
     volume_type = "gp3"
   }
   tags = {
-    Name = "docker"
-    Project = "docker-roboshop"
+    Name = "workstation"
+    Project = "workstation-roboshop"
 
   }
 }
